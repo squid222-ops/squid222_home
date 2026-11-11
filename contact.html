@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>예약·문의 | 메모리1409</title>
+  
+  <!-- 공통 CSS 및 예약·문의 전용 CSS 연결 -->
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">MEMORY 1409</a>
+      
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">홈</a></li>
+          <li><a href="menu.html">메뉴</a></li>
+          <li><a href="about.html">가게 소개</a></li>
+          <li><a href="location.html">오시는 길</a></li>
+          <li><a href="contact.html">예약·문의</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main>
+    <section class="page-section">
+      <h2 class="section-title">예약·문의</h2>
+      <div class="form-container">
+        <form action="#" method="post" onsubmit="alert('문의가 전송되었습니다.'); return false;">
+          <div class="form-group">
+            <label for="name">성함</label>
+            <input type="text" id="name" required placeholder="성함을 입력해 주세요">
+          </div>
+          <div class="form-group">
+            <label for="contact">연락처</label>
+            <input type="tel" id="contact" required placeholder="010-0000-0000">
+          </div>
+          <div class="form-group">
+            <label for="message">예약 및 문의 내용</label>
+            <textarea id="message" rows="5" required placeholder="따뜻한 남김말이나 예약/문의사항을 남겨주세요."></textarea>
+          </div>
+          <button type="submit" class="btn-submit">보내기</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; Memory 1409. All rights reserved.</p>
+    <p>대구 북구 칠성남로70 상가 101호 | Tel. 010-7899-7899</p>
+  </footer>
+
+</body>
+</html>

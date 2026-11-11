@@ -1,0 +1,46 @@
+/* 가게 소개 페이지 전용 스타일 */
+.story-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: var(--card-bg);
+  padding: 3.5rem 3rem;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-light);
+  border-radius: 12px;
+}
+
+.story-img-frame {
+  width: 100%;
+  margin-bottom: 2.5rem;
+  border: 1px solid var(--border-color);
+  padding: 8px;
+  background: #FAF8F5;
+  box-shadow: var(--shadow-light);
+  border-radius: 8px;
+}
+
+.story-img-frame img {
+  width: 100%;
+  height: auto;
+  max-height: 480px;
+  object-fit: cover;
+  display: block;
+  border-radius: 4px;
+}
+
+/* 텍스트 가독성을 높인 폰트 및 줄간격 설정 */
+.story-text {
+  font-family: var(--font-sans); /* 깔끔하고 읽기 편한 고딕 계열로 변경 */
+  font-size: 1.05rem;
+  line-height: 2.2;
+  color: var(--text-main);
+  white-space: pre-line;
+  text-align: justify;
+  letter-spacing: -0.01em; /* 자간을 미세하게 조정해 정돈된 느낌 부여 */
+}
+
+@media (max-width: 768px) {
+  .story-container {
+    padding: 1.5rem;
+  }
+}

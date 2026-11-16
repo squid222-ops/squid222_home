@@ -4,6 +4,8 @@
 
 .hero-banner-box {
   width: 100%;
+  height: clamp(280px, 42vw, 550px);
+  position: relative;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: var(--shadow-light);
@@ -14,10 +16,68 @@
 
 .hero-banner-box img {
   width: 100%;
-  height: auto;
-  max-height: 550px;
+  height: 100%;
   object-fit: cover;
   display: block;
+}
+
+.hero-autoplay-toggle {
+  border: 0;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.48);
+  cursor: pointer;
+}
+
+.hero-banner-box .swiper-button-prev,
+.hero-banner-box .swiper-button-next {
+  position: absolute;
+  top: 50%;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.48);
+  --swiper-navigation-size: 20px;
+}
+
+.hero-banner-box .swiper-button-prev {
+  left: 1rem;
+}
+
+.hero-banner-box .swiper-button-next {
+  right: 1rem;
+}
+
+.hero-banner-box .swiper-pagination {
+  bottom: 1.5rem;
+  z-index: 2;
+}
+
+.hero-banner-box .swiper-pagination-bullet {
+  background: #fff;
+  opacity: 0.6;
+}
+
+.hero-banner-box .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.hero-carousel-controls {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 3;
+}
+
+.hero-autoplay-toggle {
+  border-radius: 4px;
+  padding: 0.45rem 0.7rem;
+  font-size: 0.8rem;
+}
+
+.hero-banner-box button:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
 }
 
 .hero-intro-text {
@@ -41,13 +101,13 @@
 
 .gallery-img-box {
   width: 100%;
-  background-color: #F4F1EA;
+  background-color: #f4f1ea;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 1.5rem;
   overflow: hidden;
-  border: 1px solid rgba(0,0,0,0.03);
+  border: 1px solid rgba(0, 0, 0, 0.03);
 }
 
 .gallery-img-box.compact-img {
@@ -58,7 +118,7 @@
   max-width: 100%;
   height: 180px;
   object-fit: cover;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   border: 4px solid #fff;
 }
 

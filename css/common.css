@@ -29,6 +29,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 /* Header & Navigation */
@@ -42,9 +43,10 @@ header {
 }
 
 .nav-container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 1rem 2rem;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 1rem clamp(1rem, 2.5vw, 3.5rem);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -96,10 +98,10 @@ header {
 /* Main Container */
 main {
   flex: 1;
-  max-width: 1100px;
+  max-width: none;
   width: 100%;
-  margin: 0 auto;
-  padding: 0 2rem 6rem 2rem;
+  margin: 0;
+  padding: 0 clamp(1rem, 2.5vw, 3.5rem) 6rem clamp(1rem, 2.5vw, 3.5rem);
 }
 
 .page-section {
@@ -123,10 +125,11 @@ footer {
   background-color: #F3EFEA;
   border-top: 1px solid var(--border-color);
   text-align: center;
-  padding: 2rem;
+  padding: 2rem clamp(1rem, 2.5vw, 3.5rem);
   font-size: 0.85rem;
   color: var(--text-sub);
   margin-top: auto;
+  width: 100%;
 }
 
 /* Mobile Responsive */
@@ -147,7 +150,7 @@ footer {
     padding: 1.5rem 0;
     border-bottom: 1px solid var(--border-color);
     box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-    display: none; 
+    display: none;
   }
 
   #menu-toggle:checked ~ .nav-links {

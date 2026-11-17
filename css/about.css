@@ -14,7 +14,7 @@
   margin-bottom: 2.5rem;
   border: 1px solid var(--border-color);
   padding: 8px;
-  background: #FAF8F5;
+  background: #faf8f5;
   box-shadow: var(--shadow-light);
   border-radius: 8px;
 }
@@ -30,13 +30,13 @@
 
 /* 텍스트 가독성을 높인 폰트 및 줄간격 설정 */
 .story-text {
-  font-family: var(--font-sans); /* 깔끔하고 읽기 편한 고딕 계열로 변경 */
+  font-family: var(--font-sans);
   font-size: 1.05rem;
   line-height: 2.2;
   color: var(--text-main);
   white-space: pre-line;
   text-align: justify;
-  letter-spacing: -0.01em; /* 자간을 미세하게 조정해 정돈된 느낌 부여 */
+  letter-spacing: -0.01em;
 }
 
 @media (max-width: 768px) {

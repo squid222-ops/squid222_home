@@ -4,7 +4,7 @@
 
 .hero-banner-box {
   width: 100%;
-  height: clamp(280px, 42vw, 550px);
+  height: clamp(320px, 46vw, 640px);
   position: relative;
   border-radius: 12px;
   overflow: hidden;
@@ -89,6 +89,7 @@
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2.5rem;
   margin-top: 2.5rem;
+  width: 100%;
 }
 
 .gallery-card {
@@ -116,7 +117,7 @@
 
 .compact-img img {
   max-width: 100%;
-  height: 180px;
+  height: 200px;
   object-fit: cover;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   border: 4px solid #fff;
@@ -124,7 +125,7 @@
 
 .gallery-img-box img.full-img {
   width: 100%;
-  height: 220px;
+  height: 240px;
   object-fit: cover;
 }
 

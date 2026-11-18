@@ -215,6 +215,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
       const carousel = document.querySelector(".hero-banner-box");
       const autoplayToggle = carousel.querySelector(".hero-autoplay-toggle");
@@ -273,6 +274,7 @@
       });
       updateAutoplayToggle();
 
+<<<<<<< Updated upstream
       window.addEventListener("DOMContentLoaded", function () {
         if (typeof Swal === "undefined") return;
 
@@ -292,6 +294,14 @@
             confirmButton: "memory-popup-btn",
           },
           buttonsStyling: true,
+=======
+      window.addEventListener("DOMContentLoaded", () => {
+        Swal.fire({
+          title:
+            "햇살과 향기가 머무는 작은 전시장, 메모리1409에 오신 것을 환영합니다.",
+          icon: "success",
+          draggable: true,
+>>>>>>> Stashed changes
         });
       });
     </script>

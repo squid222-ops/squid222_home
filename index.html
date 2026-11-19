@@ -217,99 +217,99 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
-      const carousel = document.querySelector(".hero-banner-box");
-      const autoplayToggle = carousel.querySelector(".hero-autoplay-toggle");
-      const prefersReducedMotion = window.matchMedia(
-        "(prefers-reduced-motion: reduce)",
-      ).matches;
-      const homeSwiper = new Swiper(carousel, {
-        loop: true,
-        effect: "fade",
-        fadeEffect: {
-          crossFade: true,
-        },
-        speed: prefersReducedMotion ? 0 : 700,
-        autoplay: prefersReducedMotion
-          ? false
-          : {
-              delay: 5000,
-              disableOnInteraction: false,
-              pauseOnMouseEnter: true,
-            },
-        pagination: {
-          el: carousel.querySelector(".swiper-pagination"),
-          clickable: true,
-          dynamicBullets: true,
-        },
-        navigation: {
-          nextEl: carousel.querySelector(".swiper-button-next"),
-          prevEl: carousel.querySelector(".swiper-button-prev"),
-        },
-        keyboard: {
-          enabled: true,
-          onlyInViewport: true,
-        },
-        a11y: {
-          prevSlideMessage: "이전 사진",
-          nextSlideMessage: "다음 사진",
-        },
-      });
+            const carousel = document.querySelector(".hero-banner-box");
+            const autoplayToggle = carousel.querySelector(".hero-autoplay-toggle");
+            const prefersReducedMotion = window.matchMedia(
+              "(prefers-reduced-motion: reduce)",
+            ).matches;
+            const homeSwiper = new Swiper(carousel, {
+              loop: true,
+              effect: "fade",
+              fadeEffect: {
+                crossFade: true,
+              },
+              speed: prefersReducedMotion ? 0 : 700,
+              autoplay: prefersReducedMotion
+                ? false
+                : {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true,
+                  },
+              pagination: {
+                el: carousel.querySelector(".swiper-pagination"),
+                clickable: true,
+                dynamicBullets: true,
+              },
+              navigation: {
+                nextEl: carousel.querySelector(".swiper-button-next"),
+                prevEl: carousel.querySelector(".swiper-button-prev"),
+              },
+              keyboard: {
+                enabled: true,
+                onlyInViewport: true,
+              },
+              a11y: {
+                prevSlideMessage: "이전 사진",
+                nextSlideMessage: "다음 사진",
+              },
+            });
 
-      function updateAutoplayToggle() {
-        const isPlaying = homeSwiper.autoplay.running;
-        autoplayToggle.textContent = isPlaying ? "일시정지" : "자동 재생";
-        autoplayToggle.setAttribute(
-          "aria-label",
-          isPlaying ? "자동 재생 일시정지" : "자동 재생 시작",
-        );
-      }
+            function updateAutoplayToggle() {
+              const isPlaying = homeSwiper.autoplay.running;
+              autoplayToggle.textContent = isPlaying ? "일시정지" : "자동 재생";
+              autoplayToggle.setAttribute(
+                "aria-label",
+                isPlaying ? "자동 재생 일시정지" : "자동 재생 시작",
+              );
+            }
 
-      autoplayToggle.addEventListener("click", () => {
-        if (homeSwiper.autoplay.running) {
-          homeSwiper.autoplay.stop();
-        } else {
-          homeSwiper.autoplay.start();
-        }
-        updateAutoplayToggle();
-      });
-      updateAutoplayToggle();
+            autoplayToggle.addEventListener("click", () => {
+              if (homeSwiper.autoplay.running) {
+                homeSwiper.autoplay.stop();
+              } else {
+                homeSwiper.autoplay.start();
+              }
+              updateAutoplayToggle();
+            });
+            updateAutoplayToggle();
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-      window.addEventListener("DOMContentLoaded", function () {
-        if (typeof Swal === "undefined") return;
+      <<<<<<< Updated upstream
+      <<<<<<< Updated upstream
+            window.addEventListener("DOMContentLoaded", function () {
+              if (typeof Swal === "undefined") return;
 
-        Swal.fire({
-          html: `
-            <div class="memory-popup-kicker">SMALL EXHIBITION &amp; CAFE</div>
-            <h2 class="memory-popup-title">MEMORY 1409</h2>
-            <p class="memory-popup-text">햇살과 향기가 머무는 작은 전시장, 메모리1409에 오신 것을 환영합니다.</p>
-          `,
-          background: "#faf7f2",
-          backdrop: "rgba(43, 33, 24, 0.35)",
-          confirmButtonText: "입장하기",
-          confirmButtonColor: "#6b4c35",
-          draggable: true,
-          customClass: {
-            popup: "memory-popup-card",
-            confirmButton: "memory-popup-btn",
-          },
-          buttonsStyling: true,
-=======
-=======
->>>>>>> Stashed changes
-      window.addEventListener("DOMContentLoaded", () => {
-        Swal.fire({
-          title:
-            "햇살과 향기가 머무는 작은 전시장, 메모리1409에 오신 것을 환영합니다.",
-          icon: "success",
-          draggable: true,
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-        });
-      });
+              Swal.fire({
+                html: `
+                  <div class="memory-popup-kicker">SMALL EXHIBITION &amp; CAFE</div>
+                  <h2 class="memory-popup-title">MEMORY 1409</h2>
+                  <p class="memory-popup-text">햇살과 향기가 머무는 작은 전시장, 메모리1409에 오신 것을 환영합니다.</p>
+                `,
+                background: "#faf7f2",
+                backdrop: "rgba(43, 33, 24, 0.35)",
+                confirmButtonText: "입장하기",
+                confirmButtonColor: "#6b4c35",
+                draggable: true,
+                customClass: {
+                  popup: "memory-popup-card",
+                  confirmButton: "memory-popup-btn",
+                },
+                buttonsStyling: true,
+      =======
+      =======
+      >>>>>>> Stashed changes
+            window.addEventListener("DOMContentLoaded", () => {
+              Swal.fire({
+                title:
+                  "햇살과 향기가 머무는 작은 전시장, 메모리1409에 오신 것을 환영합니다.",
+                icon: "success",
+                draggable: true,
+      <<<<<<< Updated upstream
+      >>>>>>> Stashed changes
+      =======
+      >>>>>>> Stashed changes
+              });
+            });
     </script>
   </body>
 </html>
